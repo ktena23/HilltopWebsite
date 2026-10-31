@@ -31,3 +31,11 @@ Upload the entire source folder (excluding node_modules and dist) to a new GitHu
 
 ## Change log
 V1 — initial branded responsive Astro site, categorized food menu, event packages and email inquiry, drinks placeholder, About, Contact, official logos, SEO basics.
+
+
+## V2 — Crest accents and logo correction
+- Official H badge above homepage hero headline, decorative divider after food section, and footer signature.
+- Replaced three malformed logo SVGs with corrected versions from the V1 logo fix.
+- Added `wrangler.jsonc` for the separate `hilltopwebsite` Cloudflare Worker.
+- **Pending:** SpotOn ordering URL, photography, drinks content, and verification of business contact details.
+- Upload the **contents** of this folder to the existing `ktena23/HilltopWebsite` GitHub repository, not Ellington Pizza. Cloudflare may automatically deploy commits.
