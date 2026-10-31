@@ -1,6 +1,6 @@
 {
-  "name": "hilltop-website-v2",
-  "version": "2.0.0",
+  "name": "hilltop-website-v3",
+  "version": "3.0.0",
   "type": "module",
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",

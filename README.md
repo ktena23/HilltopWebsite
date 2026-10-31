@@ -1,3 +1,7 @@
+## Version 3 — crest placement refinement
+
+Removed the H badge from the homepage hero and footer. Retained the homepage divider. Added a restrained official H badge to the page introduction on Food Menu, Our Story, Drinks, and Banquets & Events. No other content or functionality changed.
+
 # Hilltop Restaurant Website — V1
 
 Astro static site prepared for GitHub and Cloudflare Workers deployment. **Not deployed.**
