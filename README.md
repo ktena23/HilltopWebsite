@@ -1,48 +1,27 @@
-## Version 3 — crest placement refinement
+# Hilltop Restaurant Website — V7
 
-Removed the H badge from the homepage hero and footer. Retained the homepage divider. Added a restrained official H badge to the page introduction on Food Menu, Our Story, Drinks, and Banquets & Events. No other content or functionality changed.
+Complete Astro static website for Hilltop Restaurant. Built from the V4 baseline, with carefully integrated V5 content changes.
 
-# Hilltop Restaurant Website — V1
+## Changes
+- Removed announcement strip.
+- Homepage retains Warm White header and standard logo.
+- Interior pages have Espresso header, cream navigation and ordering placeholder, and official reversed logo.
+- Our Story moved after Contact in desktop and mobile navigation.
+- Contact page includes Ellington Pizza and Beni's logos, addresses and phone numbers, Hilltop hours, and note on extended bar hours.
+- Food Menu hero title reduced and vertical spacing tightened.
+- Latest food menu PDF and banquet PDF retained.
 
-Astro static site prepared for GitHub and Cloudflare Workers deployment. **Not deployed.**
+## Deploy
+Upload the **contents** of this folder to the root of the existing `ktena23/HilltopWebsite` GitHub repository (do not upload the ZIP itself). Commit to main; Cloudflare Git integration should redeploy.
 
-## Local preview
-1. Install Node.js 20+ if needed.
-2. Open a terminal in this folder.
-3. Run `npm install` then `npm run dev`. Open the URL shown.
-4. Run `npm run build` before uploading. Output is in `dist/`.
+## Configuration
+Cloudflare Worker name: `hilltopwebsite`; build command `npm run build`; deploy command `npx wrangler deploy`. Wrangler config serves `./dist`.
 
-## GitHub / Cloudflare
-Upload the entire source folder (excluding node_modules and dist) to a new GitHub repository. Cloudflare Workers static asset hosting can build with `npm run build` and serve `dist/` (configure Workers assets in the Cloudflare dashboard). Do not connect or deploy until approved.
+## Pending
+- Add correct Hilltop SpotOn ordering URL in `src/data/site.js` and wire button after approval.
+- Professional restaurant photography.
+- Drinks content.
+- Banquet form backend (currently mailto-based).
 
-## Required before public launch
-- **ORDER LINK:** `src/data/site.js` → `orderUrl` is intentionally blank. The visible Order Online button currently goes to Contact and says Soon. Replace its destination in `src/layouts/Layout.astro` with the verified Hilltop SpotOn link. Never use Ellington Pizza's link.
-- **EVENT INQUIRIES:** Current form opens a prefilled email in the visitor's email app; it is NOT a server-submitted form. Connect a secure form service/endpoint and test before claiming web submission.
-- **PHOTOGRAPHY:** Replace branded placeholder panels with professional Hilltop images after the shoot; do not use generic stock as actual restaurant photography.
-- **DRINKS:** Await finalized drinks menu and prices.
-- **CONTACT:** Verify public restaurant phone and operating hours; the banquet packet provides 860-477-1054 and hilltopbanquets@gmail.com for event inquiries.
-- **BANQUET CAPACITY:** The food menu says 95, buffet/breakfast packet says 90, plated says 85. Package-specific limits are displayed rather than claiming a single universal capacity. Confirm actual occupancy.
-- **MENUS:** Compare website menu data with latest approved prices before launch. The PDF files are included unchanged.
-
-## Source organization
-- `src/pages/` pages
-- `src/layouts/Layout.astro` global header/footer/styles
-- `src/data/menu.js` menu items/prices
-- `src/data/banquets.js` event packages
-- `src/data/site.js` site settings / TODOs
-- `public/assets/` official Hilltop logo assets
-- `public/menus/` supplied PDFs
-
-## Change log
-V1 — initial branded responsive Astro site, categorized food menu, event packages and email inquiry, drinks placeholder, About, Contact, official logos, SEO basics.
-
-
-## V2 — Crest accents and logo correction
-- Official H badge above homepage hero headline, decorative divider after food section, and footer signature.
-- Replaced three malformed logo SVGs with corrected versions from the V1 logo fix.
-- Added `wrangler.jsonc` for the separate `hilltopwebsite` Cloudflare Worker.
-- **Pending:** SpotOn ordering URL, photography, drinks content, and verification of business contact details.
-- Upload the **contents** of this folder to the existing `ktena23/HilltopWebsite` GitHub repository, not Ellington Pizza. Cloudflare may automatically deploy commits.
-
-## V4 — Food menu PDF update
-Replaced `public/menus/hilltop-food-menu.pdf` with the newly supplied Hilltop Menu (1).pdf. The Food Menu download link remains `/menus/hilltop-food-menu.pdf` and its label now reads “Download Food Menu PDF”. The HTML menu data has not been modified.
+## Verification
+Source and ZIP integrity checked. Production Astro build could not be completed in this environment because npm dependency installation timed out. Check Cloudflare build logs before treating V7 as validated.
