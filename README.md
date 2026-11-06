@@ -46,3 +46,13 @@ V1 — initial branded responsive Astro site, categorized food menu, event packa
 
 ## V4 — Food menu PDF update
 Replaced `public/menus/hilltop-food-menu.pdf` with the newly supplied Hilltop Menu (1).pdf. The Food Menu download link remains `/menus/hilltop-food-menu.pdf` and its label now reads “Download Food Menu PDF”. The HTML menu data has not been modified.
+
+
+## V5 changes (2026-11-06)
+- Removed the top announcement strip.
+- Reordered navigation to place Our Story after Contact.
+- Added Espresso header with reversed light logo and cream ordering button on interior pages; homepage header unchanged.
+- Reduced Food Menu title/hero spacing.
+- Updated Contact & Visit with verified supplied hours and note that bar hours may extend when busy.
+- Added family restaurants Ellington Pizza and Beni’s with supplied logo artwork.
+- SpotOn URL remains intentionally unset.
