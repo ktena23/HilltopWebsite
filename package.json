@@ -1,6 +1,6 @@
 {
-  "name": "hilltop-website-v5",
-  "version": "5.0.0",
+  "name": "hilltop-website-v6",
+  "version": "6.0.0",
   "type": "module",
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
@@ -8,6 +8,6 @@
     "preview": "astro preview --host 0.0.0.0"
   },
   "dependencies": {
-    "astro": "^5.0.0"
+    "astro": "^6.0.0"
   }
 }
