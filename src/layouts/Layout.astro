@@ -18,4 +18,23 @@ const nav=[['/','Home'],['/menu','Food Menu'],['/drinks','Drinks'],['/banquets',
 .header-interior .brand img{width:195px;max-height:55px;object-fit:contain;object-position:left center}
 @media(max-width:1050px){.header-interior .brand img{width:165px}}
 @media(max-width:560px){.header-interior .brand img{width:150px}}
+
+/* V8: measured typography and spacing refinements; retain all V7 structure. */
+.header nav a{font-size:.94rem;line-height:1.3}
+@media(min-width:851px) and (max-width:1180px){.header{gap:14px}.header nav{gap:14px}.header nav a{font-size:.86rem}.brand img,.header-interior .brand img{width:170px}}
+/* Compact interior hero headings; homepage hero remains untouched. */
+.page-hero{padding:52px 0 38px}
+.page-hero h1{font-size:clamp(2.6rem,4.4vw,4.5rem);line-height:1.12;margin:12px 0 18px;max-width:1000px}
+.page-hero p{margin-bottom:0;font-size:1.02rem}
+.page-hero .inner-page-crest{width:34px;height:34px;margin-bottom:14px}
+.page-hero + .section{padding-top:52px}
+.page-hero + .section .photo-placeholder{min-height:320px}
+/* Compact footer while preserving its three columns and all links. */
+.footer-main{padding-top:42px;padding-bottom:32px;gap:42px}
+.footer-main a{margin-bottom:5px}
+.footer-main h3{margin-bottom:12px}
+.footer-main p{margin-bottom:12px}
+.footer-bottom{padding:14px 0}
+@media(max-width:850px){.page-hero{padding:45px 0 32px}.page-hero + .section{padding-top:40px}.footer-main{gap:28px;padding-top:36px;padding-bottom:28px}}
+@media(max-width:560px){.page-hero{padding:34px 0 28px}.page-hero h1{font-size:clamp(2.35rem,10vw,3rem);margin:10px 0 14px}.page-hero .inner-page-crest{margin-bottom:12px}.footer-main{padding-top:30px;padding-bottom:22px}.footer-bottom{padding:12px 0}}
 </style>

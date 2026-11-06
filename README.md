@@ -25,3 +25,11 @@ Cloudflare Worker name: `hilltopwebsite`; build command `npm run build`; deploy 
 
 ## Verification
 Source and ZIP integrity checked. Production Astro build could not be completed in this environment because npm dependency installation timed out. Check Cloudflare build logs before treating V7 as validated.
+
+
+## V8 changes
+- Increased desktop navigation type to 15px (responsive adjustments at narrower widths).
+- Reduced interior page hero headline size and vertical whitespace; homepage hero unchanged.
+- Pulled interior content sections closer to their introductions.
+- Reduced footer padding and link spacing without removing content.
+- SpotOn ordering URL remains pending.
