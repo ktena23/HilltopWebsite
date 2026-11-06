@@ -43,3 +43,6 @@ V1 — initial branded responsive Astro site, categorized food menu, event packa
 - Added `wrangler.jsonc` for the separate `hilltopwebsite` Cloudflare Worker.
 - **Pending:** SpotOn ordering URL, photography, drinks content, and verification of business contact details.
 - Upload the **contents** of this folder to the existing `ktena23/HilltopWebsite` GitHub repository, not Ellington Pizza. Cloudflare may automatically deploy commits.
+
+## V4 — Food menu PDF update
+Replaced `public/menus/hilltop-food-menu.pdf` with the newly supplied Hilltop Menu (1).pdf. The Food Menu download link remains `/menus/hilltop-food-menu.pdf` and its label now reads “Download Food Menu PDF”. The HTML menu data has not been modified.
